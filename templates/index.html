@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小粽子的小屋 - 你的学习好伙伴</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <h1 class="hamster-title">小粽子的小屋 🐹</h1>
+        </div>
+        
+        <div class="chat-messages">
+            <!-- Messages will be added here dynamically -->
+        </div>
+        
+        <div class="typing-indicator">
+            小粽子正在思考... 🤔
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="和小粽子说点什么吧...">
+            <button id="send-button">发送</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
